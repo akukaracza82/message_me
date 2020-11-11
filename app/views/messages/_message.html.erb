@@ -1,0 +1,19 @@
+<div class="event">
+  <div class="content">
+    <div class="summary">
+       <%= message.user.username %> : <%= message.body %>
+    </div>
+  </div>
+</div>
+
+<!-- this has been extracted from chatroom index code to hide:
+
+< % @messages.each do |message| %>
+< %= message.user.username %> : <message.body %>
+< % end %>
+when I create a partial of _message in messages folder, RoR will know it exists
+and render @messages will refer to that partial
+name of the partial must be the same as name of the model in folder named after
+ instance variable name
+-->
+  
