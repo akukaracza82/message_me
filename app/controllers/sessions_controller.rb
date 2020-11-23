@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       flash[:success] = "You have succesfully logged in"
       redirect_to root_path
     else
-      flash.now[:error] = "There is comething wrong with your login information"
+      flash.now[:error] = "There is something wrong with your login information"
       render 'new'
     end
   end
